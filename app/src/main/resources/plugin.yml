@@ -1,0 +1,7 @@
+name: Homes
+version: 1.0.0
+main: io.papermc.homes.Main
+description: Homes plugin
+author: pairnon
+website: https://github.com/pairnon/Homes
+api-version: '1.20'
