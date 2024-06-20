@@ -4,6 +4,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
+import io.papermc.homes.Broadcasting;
+
 public class CommandSetHome implements CommandExecutor {
 
     @Override
@@ -11,11 +13,11 @@ public class CommandSetHome implements CommandExecutor {
 
         
         if (args.length == 0) {
-            sender.sendMessage("You must specify a home name.");
+            Broadcasting.sendErrorResponse(sender, "You must specify a home name.");
             return true;
         }
-        
-        sender.sendMessage("Setting home...");
+
+        Broadcasting.sendMessageResponse(sender, "Setting home...");
         
         return true;
     }
