@@ -17,12 +17,12 @@ public class CommandHome implements CommandExecutor {
             return true;
         }
 
+        Player player = (Player) sender;
+
         if (args.length == 0) {
-            Broadcasting.sendErrorResponse(sender, "You must specify a home.");
+            Broadcasting.sendErrorMessage(player, "You must specify a home.");
             return true;
         }
-
-        Player player = (Player) sender;
 
         Broadcasting.sendSuccessMessage(player, "Teleporting you...");
 

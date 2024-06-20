@@ -17,12 +17,12 @@ public class CommandSetHome implements CommandExecutor {
             return true;
         }
 
+        Player player = (Player) sender;
+
         if (args.length == 0) {
-            Broadcasting.sendErrorResponse(sender, "You must specify a home name.");
+            Broadcasting.sendErrorMessage(player, "You must specify a home name.");
             return true;
         }
-
-        Player player = (Player) sender;
 
         Broadcasting.sendMessage(player, "Setting home...");
         
