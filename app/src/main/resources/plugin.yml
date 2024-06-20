@@ -5,3 +5,8 @@ description: Homes plugin
 author: pairnon
 website: https://github.com/pairnon/Homes
 api-version: '1.20'
+commands:
+  sethome:
+    description: Set a new home
+  home:
+    description: Teleport to a home
