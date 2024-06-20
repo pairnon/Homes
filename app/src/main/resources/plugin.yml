@@ -10,3 +10,5 @@ commands:
     description: Set a new home
   home:
     description: Teleport to a home
+  listhomes:
+    description: List all homes

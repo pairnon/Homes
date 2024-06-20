@@ -5,6 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import io.papermc.homes.commands.CommandHome;
+import io.papermc.homes.commands.CommandListHomes;
 import io.papermc.homes.commands.CommandSetHome;
 
 public class Main extends JavaPlugin implements Listener {
@@ -22,6 +23,7 @@ public class Main extends JavaPlugin implements Listener {
 
         this.getCommand("sethome").setExecutor(new CommandSetHome());
         this.getCommand("home").setExecutor(new CommandHome());
+        this.getCommand("listhomes").setExecutor(new CommandListHomes());
 
     }
     
