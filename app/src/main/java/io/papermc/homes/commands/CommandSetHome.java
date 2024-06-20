@@ -22,7 +22,9 @@ public class CommandSetHome implements CommandExecutor {
             return true;
         }
 
-        Broadcasting.sendMessageResponse(sender, "Setting home...");
+        Player player = (Player) sender;
+
+        Broadcasting.sendMessage(player, "Setting home...");
         
         return true;
     }

@@ -22,7 +22,9 @@ public class CommandHome implements CommandExecutor {
             return true;
         }
 
-        Broadcasting.sendSuccessResponse(sender, "Teleporting you...");
+        Player player = (Player) sender;
+
+        Broadcasting.sendSuccessMessage(player, "Teleporting you...");
 
         return true;
     }
